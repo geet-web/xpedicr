@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Xpedicr Industry Pvt. Ltd.</title>
+    <meta name="description" content="Join Xpedicr Industry Pvt. Ltd. and help us build India's future healthcare infrastructure. Explore open positions in engineering, operations, and more.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page">
+
+    <!-- Navigation -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+                <span class="logo-text">Xpedicr<span class="dot">.</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="ecosystem-services.html">Ecosystem & Services</a>
+                <a href="nava-ai.html">Nava.ai</a>
+                <a href="future-partners.html">Future & Partners</a>
+                <a href="careers.html" class="active">Careers</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline-primary modal-trigger" data-modal="partnerModal">Partner With Us</a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="ecosystem-services.html">Ecosystem & Services</a>
+            <a href="nava-ai.html">Nava.ai</a>
+            <a href="future-partners.html">Future & Partners</a>
+            <a href="careers.html" class="active">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn btn-accent mt-4 modal-trigger" data-modal="partnerModal">Partner With Us</a>
+        </div>
+    </div>
+
+    <!-- 1. Hero Section -->
+    <div class="inner-hero">
+        <div class="container fade-in-up">
+            <h1>Join Our Team</h1>
+            <p>Join us in building the future of healthcare through innovation and technology.</p>
+            <div class="mt-4">
+                <a href="#open-positions" class="btn btn-white btn-lg">View Open Positions</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Intro Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="scroll-reveal up">
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
+                    Xpedicr Industry Pvt. Ltd. is on a mission to solve India's healthcare fragmentation. We are building a unified ecosystem that connects providers, technology, and logistics to ensure every citizen has access to rapid, reliable healthcare. By joining us, you aren't just taking a job; you are taking part in a healthcare infrastructure transformation that saves lives every single day.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Detail Modal -->
+    <div class="jm-overlay" id="jobModal" onclick="if(event.target===this)closeJobModal()">
+        <div class="jm-box">
+            <button class="jm-close" onclick="closeJobModal()" aria-label="Close">&times;</button>
+            <div class="jm-body" id="jobModalBody"></div>
+            <div class="jm-footer">
+                <a href="#apply-now" class="jm-apply-btn" onclick="closeJobModal()">Apply Now &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Open Positions Section -->
+    <section id="open-positions" class="section-padding careers-openings-section">
+        <div class="container">
+            <div class="section-title text-center scroll-reveal up" style="margin-bottom: 56px;">
+                <span class="subtitle">Careers</span>
+                <h2>Current Openings</h2>
+                <p style="color:#6B7280;font-size:1rem;margin-top:12px;">Growing fast</p>
+            </div>
+
+            <div class="jobs-grid">
+
+                <!-- Job Card 1 -->
+                <div class="jc-card scroll-reveal up" onclick="openJobModal('job1')">
+                    <div class="jc-top">
+                        <div class="jc-type-badge">Full-Time</div>
+                    </div>
+                    <h3 class="jc-title">Healthcare Operations Executive</h3>
+                    <div class="jc-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Bengaluru / Mumbai</span>
+                        <span><i class="fa-solid fa-clock"></i> 1–3 yrs exp</span>
+                    </div>
+                    <p class="jc-summary">Manage and optimize healthcare logistics, emergency coordination, and partner hospital relations across our network.</p>
+                    <div class="jc-tags">
+                        <span>Operations</span>
+                        <span>Healthcare Logistics</span>
+                        <span>CRM</span>
+                    </div>
+                    <div class="jc-footer">
+                        <span class="jc-details-link">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                        <a href="#apply-now" class="jc-apply-btn" onclick="event.stopPropagation()">Apply</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 2 -->
+                <div class="jc-card scroll-reveal up" style="transition-delay:0.1s" onclick="openJobModal('job2')">
+                    <div class="jc-top">
+                        <div class="jc-type-badge">Full-Time</div>
+                    </div>
+                    <h3 class="jc-title">Senior Full-Stack Developer <span style="color:#2563EB">(AI/Health-Tech)</span></h3>
+                    <div class="jc-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Remote / Hybrid</span>
+                        <span><i class="fa-solid fa-clock"></i> 3–5 yrs exp</span>
+                    </div>
+                    <p class="jc-summary">Build the Nava.ai platform — our flagship AI-driven diagnostic and triage system powering next-gen patient care.</p>
+                    <div class="jc-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>AI/ML</span>
+                        <span>HealthTech</span>
+                    </div>
+                    <div class="jc-footer">
+                        <span class="jc-details-link">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                        <a href="#apply-now" class="jc-apply-btn" onclick="event.stopPropagation()">Apply</a>
+                    </div>
+                </div>
+
+                <!-- Job Card 3 -->
+                <div class="jc-card scroll-reveal up" style="transition-delay:0.2s" onclick="openJobModal('job3')">
+                    <div class="jc-top">
+                        <div class="jc-type-badge">Full-Time</div>
+                    </div>
+                    <h3 class="jc-title">Medical Partnerships Manager</h3>
+                    <div class="jc-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Delhi NCR / Pan-India</span>
+                        <span><i class="fa-solid fa-clock"></i> 2+ yrs exp</span>
+                    </div>
+                    <p class="jc-summary">Scale our partner network by onboarding the best hospitals, pharmacies, and specialists across India.</p>
+                    <div class="jc-tags">
+                        <span>B2B Sales</span>
+                        <span>Partnerships</span>
+                        <span>MBA Preferred</span>
+                    </div>
+                    <div class="jc-footer">
+                        <span class="jc-details-link">View Details <i class="fa-solid fa-arrow-right"></i></span>
+                        <a href="#apply-now" class="jc-apply-btn" onclick="event.stopPropagation()">Apply</a>
+                    </div>
+                </div>
+
+            </div><!-- /.jobs-grid -->
+        </div>
+    </section>
+
+    <!-- Job Modal Data + JS -->
+    <script>
+    const jobData = {
+        job1: {
+            title: 'Healthcare Operations Executive',
+            location: 'Bengaluru / Mumbai',
+            type: 'Full-Time',
+            exp: '1–3 yrs',
+            summary: 'We are looking for a dedicated Operations Executive to manage and optimize our healthcare logistics network and partner hospital relations.',
+            responsibilities: [
+                'Coordinate between partner clinics, diagnostic labs, and delivery fleets.',
+                'Monitor and ensure 10-minute response times for emergency logistics.',
+                'Maintain operational documentation and partner compliance records.',
+                'Identify bottlenecks in service delivery and implement rapid solutions.'
+            ],
+            requirements: [
+                "Bachelor's degree in Healthcare Management, Logistics, or related field.",
+                '1–3 years in operations or healthcare logistics.',
+                'Strong problem-solving, real-time coordination, and basic CRM knowledge.',
+                'Professional fluency in English and local languages.'
+            ],
+            offer: [
+                'Opportunity to lead high-impact emergency operations.',
+                'Direct mentorship from the founders.',
+                'Competitive salary and performance-based incentives.'
+            ],
+            tags: ['Operations', 'Healthcare Logistics', 'CRM']
+        },
+        job2: {
+            title: 'Senior Full-Stack Developer (AI/Health-Tech)',
+            location: 'Remote / Hybrid',
+            type: 'Full-Time',
+            exp: '3–5 yrs',
+            summary: 'Join our core tech team to build the Nava.ai platform, our flagship AI-driven diagnostic and triage system.',
+            responsibilities: [
+                'Develop and maintain high-performance web applications using modern stacks.',
+                'Integrate AI/ML models into patient-facing diagnostic interfaces.',
+                'Ensure HIPAA-compliant data security and architecture.',
+                'Collaborate with healthcare professionals to translate clinical needs into tech features.'
+            ],
+            requirements: [
+                'B.Tech/M.Tech in Computer Science or equivalent experience.',
+                '3–5 years in full-stack development (Node.js/React preferred).',
+                'API design, database optimization, and familiarity with cloud infrastructure.',
+                'Previous experience in HealthTech or Fintech is a plus.'
+            ],
+            offer: [
+                'Work on life-saving AI technology at scale.',
+                'High ownership of product roadmap and technical architecture.',
+                'Equity/ESOP options for early team members.'
+            ],
+            tags: ['React', 'Node.js', 'AI/ML', 'HealthTech']
+        },
+        job3: {
+            title: 'Medical Partnerships Manager',
+            location: 'Delhi NCR / Pan-India',
+            type: 'Full-Time',
+            exp: '2+ yrs',
+            summary: 'Scale our partner network by bringing on board the best hospitals, pharmacies, and specialists across India.',
+            responsibilities: [
+                'Lead end-to-end partner onboarding from prospecting to final MOU signing.',
+                'Conduct presentations to hospital directors and wellness brand founders.',
+                'Manage long-term relationships and ensure partner success.',
+                'Analyze market data to prioritize city-wide expansion strategies.'
+            ],
+            requirements: [
+                'MBA or equivalent professional degree.',
+                '2+ years in B2B sales or healthcare partnerships.',
+                'Strong negotiation, presentation, and strategic planning skills.',
+                'Willingness to travel to partner sites across India.'
+            ],
+            offer: [
+                'Be the face of Xpedicr to the healthcare industry.',
+                'Uncapped incentive structures based on growth.',
+                'Fast-tracked leadership growth opportunities.'
+            ],
+            tags: ['B2B Sales', 'Partnerships', 'MBA Preferred']
+        }
+    };
+
+    function openJobModal(id) {
+        const j = jobData[id];
+        document.getElementById('jobModalBody').innerHTML = `
+            <div class="jm-header">
+                <span class="jm-badge">${j.type}</span>
+                <h2>${j.title}</h2>
+                <div class="jm-meta-row">
+                    <span><i class="fa-solid fa-location-dot"></i> ${j.location}</span>
+                    <span><i class="fa-solid fa-clock"></i> ${j.exp} experience</span>
+                </div>
+            </div>
+            <p class="jm-summary">${j.summary}</p>
+            <div class="jm-section"><h5>Responsibilities</h5><ul>${j.responsibilities.map(r=>`<li>${r}</li>`).join('')}</ul></div>
+            <div class="jm-section"><h5>Requirements</h5><ul>${j.requirements.map(r=>`<li>${r}</li>`).join('')}</ul></div>
+            <div class="jm-section"><h5>What We Offer</h5><ul>${j.offer.map(r=>`<li>${r}</li>`).join('')}</ul></div>
+            <div class="jc-tags" style="margin-top:20px;">${j.tags.map(t=>`<span>${t}</span>`).join('')}</div>
+        `;
+        const modal = document.getElementById('jobModal');
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeJobModal() {
+        document.getElementById('jobModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') closeJobModal(); });
+    </script>
+
+    <!-- 4. General Application Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="scroll-reveal up">
+                <h3 style="margin-bottom: 20px;">Didn't Find the Right Role?</h3>
+                <p style="color: #666; font-size: 1.1rem; margin-bottom: 40px;">
+                    We are always on the lookout for exceptional talent. If you believe you can add value to Xpedicr in a way not listed above, please submit your resume and let's talk.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Application Form Section -->
+    <section id="apply-now" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center scroll-reveal up">
+                <span class="subtitle">Application</span>
+                <h2>Apply for a Position</h2>
+            </div>
+            
+            <div class="application-box mt-5 scroll-reveal up" style="max-width: 700px; margin: 0 auto;">
+                <form id="careerApplicationForm" class="contact-form">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Position Applying For *</label>
+                        <select class="form-control" required>
+                            <option value="">Select Position</option>
+                            <option>Healthcare Operations Executive</option>
+                            <option>Senior Full-Stack Developer</option>
+                            <option>Medical Partnerships Manager</option>
+                            <option>General Application / Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Resume / CV Upload (PDF only) *</label>
+                        <input type="file" class="form-control" accept=".pdf" required>
+                        <span class="text-sm text-gray" style="display:block; margin-top:5px;">Maximum file size: 5MB</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Cover Letter (Optional)</label>
+                        <textarea class="form-control" rows="4" placeholder="Why do you want to join Xpedicr?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 mt-3">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. About the Company -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6 scroll-reveal left">
+                    <div class="pe-md-4">
+                        <span class="subtitle">Who We Are</span>
+                        <h2 style="font-size: 2.8rem; margin: 16px 0 24px; line-height: 1.1;">Transforming Healthcare Logistics</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">Xpedicr is a tech-driven healthcare aggregator focusing on rapid emergency response, AI-assisted diagnostics, and seamless supply chain integration. We combine the agility of a startup with a long-term vision to build India's future healthcare infrastructure.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 scroll-reveal right mt-4 mt-md-0">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800" alt="About Xpedicr" class="rounded-image shadow-lg" style="width: 100%; object-fit: cover; height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Why Work With Us & 8. Benefits -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center scroll-reveal up">
+                <h2>Why Work With Us</h2>
+                <p class="section-desc">Join a culture of innovation, impact, and continuous growth.</p>
+            </div>
+            
+            <div class="careers-perks-grid scroll-reveal up delay-1">
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h4>Growth Opportunities</h4>
+                    <p>Rapid career progression and leadership paths in a scaling ecosystem.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4>Innovation-Driven</h4>
+                    <p>Tackle complex healthcare and technology challenges on a daily basis.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h4>Real Impact</h4>
+                    <p>Every project you complete helps improve patient access across India.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h4>Learning Environment</h4>
+                    <p>Dedicated budgets for professional courses and continuous upskilling.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Startup Energy</h4>
+                    <p>High-paced, collaborative culture driven by a massive long-term vision.</p>
+                </div>
+                <div class="perk-card">
+                    <div class="perk-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h4>Comprehensive Benefits</h4>
+                    <p>Paid leave, flexible work models, and robust health support for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white text-center" style="padding-bottom: 140px;">
+        <div class="container scroll-reveal up">
+            <h2 style="font-size: 2.8rem; margin-bottom: 24px;">Start Your Journey With Xpedicr</h2>
+            <p style="color: var(--gray); font-size: 1.2rem; max-width: 650px; margin: 0 auto 40px; line-height: 1.7;">Join a team of visionaries dedicated to making healthcare accessible for every Indian citizen.</p>
+            <a href="#apply-now" class="btn btn-primary btn-lg">Apply Now</a>
+        </div>
+    </section>
+
+                                                                <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="footer-row">
+                <!-- Col 1: Brand + description -->
+                <div class="footer-brand-section">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-icon text-white"><i class="fa-solid fa-heart-pulse"></i></span>
+                        <span class="logo-text text-white">Xpedicr<span class="dot">.</span></span>
+                    </a>
+                    <p class="footer-description">Building India&apos;s future healthcare infrastructure through technology, partnerships, logistics, and innovation.</p>
+                </div>
+
+                <!-- Col 2: Quick links -->
+                <div class="footer-links-section">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ecosystem-services.html">Ecosystem &amp; Services</a></li>
+                        <li><a href="future-partners.html">Future &amp; Partners</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Our Brands -->
+                <div class="footer-links-section">
+                    <h5 class="footer-title">Our Brands</h5>
+                    <ul class="footer-links">
+                        <li><a href="ecosystem-services.html#nidhaan">Nidhaan</a></li>
+                        <li><a href="nava-ai.html">Nava.ai</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact / social icons -->
+                <div class="footer-social-section">
+                    <div class="footer-contact mb-4">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Tech Park, Electronic City, Bengaluru, India</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@xpedicr.in</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91 72898 90080</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="footer-title">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 Xpedicr Industry Pvt. Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="modal-trigger" data-modal="privacyModal">Privacy Policy</a>
+                    <a href="#" class="modal-trigger" data-modal="termsModal">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917289890080" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Partner Modal -->
+    <div class="modal-overlay" id="partnerModal">
+        <div class="modal-content" style="max-width: 700px;">
+            <div class="modal-header">
+                <h3>Partner With Xpedicr</h3>
+                <button class="modal-close" data-close="partnerModal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-sm text-gray mb-4">Join our healthcare ecosystem. Fill out the basic details below and our team will contact you within 48 hours.</p>
+                <form id="partnerModalForm" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label>Full Name *</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Company / Business Name *</label>
+                            <input type="text" class="form-control" placeholder="Business name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label>Business Category *</label>
+                            <select class="form-control" required>
+                                <option value="">Select Category</option>
+                                <option>Pharmacy</option>
+                                <option>Diagnostic Lab</option>
+                                <option>Hospital / Clinic</option>
+                                <option>Wellness Brand</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>City / Location *</label>
+                            <input type="text" class="form-control" placeholder="Your city" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label>Email Address *</label>
+                            <input type="email" class="form-control" placeholder="email@example.com" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Mobile Number *</label>
+                            <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label>Additional Information (Optional)</label>
+                        <textarea class="form-control" rows="3" placeholder="Briefly describe your business..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 mt-4">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Handle career application form submission
+        document.getElementById('careerApplicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fa-solid fa-check"></i> Application Submitted Successfully';
+                btn.classList.remove('btn-primary');
+                btn.classList.add('btn-success');
+                this.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.add('btn-primary');
+                    btn.classList.remove('btn-success');
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

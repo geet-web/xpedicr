@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nava.ai — AI Intelligence Layer | Xpedicr</title>
+    <meta name="description" content="Nava.ai is the intelligent AI engine powering the Xpedicr healthcare ecosystem — real-time triage, predictive routing, and emergency optimization.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nava-ai.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+                <span class="logo-text">Xpedicr<span class="dot">.</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="ecosystem-services.html">Ecosystem &amp; Services</a>
+                <a href="nava-ai.html" class="active">Nava.ai</a>
+                <a href="future-partners.html">Future &amp; Partners</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline-primary modal-trigger" data-modal="partnerModal">Partner With Us</a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu"><i class="fa-solid fa-xmark"></i></button>
+        <div class="mobile-nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="ecosystem-services.html">Ecosystem &amp; Services</a>
+            <a href="nava-ai.html" class="active">Nava.ai</a>
+            <a href="future-partners.html">Future &amp; Partners</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn btn-accent mt-4 modal-trigger" data-modal="partnerModal">Partner With Us</a>
+        </div>
+    </div>
+
+    <!-- ═══ HERO ═══════════════════════════════════════════════════════════ -->
+    <section class="nava-hero">
+        <div class="nava-hero-bg"></div>
+        <div class="nava-grid-texture"></div>
+        <div class="container nava-hero-content">
+            <div class="nava-hero-badge scroll-reveal up">
+                <i class="fa-solid fa-microchip"></i> Powered by Artificial Intelligence
+            </div>
+            <h1 class="nava-hero-heading scroll-reveal up delay-1">Nava.ai &mdash; <span class="nava-gradient-text">The Intelligence Layer</span> of Xpedicr</h1>
+            <p class="nava-hero-sub scroll-reveal up delay-2">
+                A real-time AI engine that predicts, routes, and optimises every healthcare interaction — from emergency dispatch to clinical triage — across India's most complex hospital networks.
+            </p>
+            <div class="nava-hero-ctas scroll-reveal up delay-3">
+                <a href="#features" class="nava-btn-primary">Explore Platform <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#" class="nava-btn-ghost modal-trigger" data-modal="partnerModal">Request Demo <i class="fa-solid fa-calendar-check"></i></a>
+            </div>
+        </div>
+
+        <!-- Floating Dashboard Card -->
+        <div class="nava-dashboard scroll-reveal up delay-2">
+            <div class="nd-header">
+                <span class="nd-dot green"></span><span class="nd-dot amber"></span><span class="nd-dot red"></span>
+                <span class="nd-title">Nava.ai Control Center</span>
+                <span class="nd-live"><i class="fa-solid fa-circle"></i> LIVE</span>
+            </div>
+            <div class="nd-metrics">
+                <div class="nd-metric">
+                    <span class="nd-val" data-target="98">0</span><span class="nd-unit">%</span>
+                    <span class="nd-label">Triage Accuracy</span>
+                    <div class="nd-bar"><div class="nd-fill" style="width:98%"></div></div>
+                </div>
+                <div class="nd-metric">
+                    <span class="nd-val" data-target="40">0</span><span class="nd-unit">%</span>
+                    <span class="nd-label">Faster Dispatch</span>
+                    <div class="nd-bar"><div class="nd-fill" style="width:40%"></div></div>
+                </div>
+                <div class="nd-metric">
+                    <span class="nd-val" data-target="247">0</span><span class="nd-unit">+</span>
+                    <span class="nd-label">Hospitals Monitored</span>
+                    <div class="nd-bar"><div class="nd-fill" style="width:82%"></div></div>
+                </div>
+                <div class="nd-metric">
+                    <span class="nd-val" data-target="12">0</span><span class="nd-unit">ms</span>
+                    <span class="nd-label">Avg. Routing Latency</span>
+                    <div class="nd-bar"><div class="nd-fill" style="width:95%"></div></div>
+                </div>
+            </div>
+            <div class="nd-alerts">
+                <div class="nd-alert green"><i class="fa-solid fa-circle-check"></i> Patient routed — Koramangala Clinic → 3.2 km</div>
+                <div class="nd-alert amber"><i class="fa-solid fa-triangle-exclamation"></i> High load predicted — Whitefield Hub +18%</div>
+                <div class="nd-alert blue"><i class="fa-solid fa-bolt"></i> Ambulance ETA optimised — 6 min → 4 min</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ STATS STRIP ══════════════════════════════════════════════════════ -->
+    <section class="nava-stats-strip">
+        <div class="container nava-stats-grid">
+            <div class="nava-stat scroll-reveal up">
+                <span class="ns-num">98%</span>
+                <span class="ns-label">Routing Accuracy</span>
+            </div>
+            <div class="nava-stat scroll-reveal up delay-1">
+                <span class="ns-num">40%</span>
+                <span class="ns-label">Faster Emergency Allocation</span>
+            </div>
+            <div class="nava-stat scroll-reveal up delay-2">
+                <span class="ns-num">24/7</span>
+                <span class="ns-label">AI Prediction Engine</span>
+            </div>
+            <div class="nava-stat scroll-reveal up delay-3">
+                <span class="ns-num">12+</span>
+                <span class="ns-label">Cities Supported</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT SECTION ════════════════════════════════════════════════════ -->
+    <section class="section-padding" style="background:#fff;">
+        <div class="container">
+            <div class="nava-about-grid">
+                <div class="scroll-reveal left">
+                    <span class="subtitle">What is Nava.ai</span>
+                    <h2 style="font-size:2.6rem;font-weight:800;letter-spacing:-1px;line-height:1.15;margin:16px 0 24px;">The Brain Behind Every Healthcare Decision</h2>
+                    <p style="font-size:1.05rem;color:#4B5563;line-height:1.8;margin-bottom:18px;">Nava.ai is Xpedicr's proprietary AI intelligence platform — a real-time decision engine trained on India's unique healthcare demand patterns. It sits at the core of every service in the Xpedicr ecosystem, from pharmacy fulfilment to emergency ambulance dispatch.</p>
+                    <p style="font-size:1.05rem;color:#4B5563;line-height:1.8;margin-bottom:32px;">Unlike generic AI tools, Nava.ai is purpose-built for the speed, complexity, and diversity of Indian healthcare — handling multi-language inputs, regional hospital capacity data, and live traffic routing simultaneously.</p>
+                    <div class="nava-about-tags">
+                        <span><i class="fa-solid fa-check"></i> Real-Time Prediction</span>
+                        <span><i class="fa-solid fa-check"></i> Multi-City Support</span>
+                        <span><i class="fa-solid fa-check"></i> HIPAA-Grade Security</span>
+                        <span><i class="fa-solid fa-check"></i> Sub-20ms Latency</span>
+                    </div>
+                </div>
+                <div class="nava-about-visual scroll-reveal right">
+                    <div class="nava-orb-card">
+                        <div class="nava-orb"></div>
+                        <div class="nava-orb-inner">
+                            <i class="fa-solid fa-brain" style="font-size:56px;color:#2563EB;"></i>
+                            <p style="margin-top:16px;font-weight:700;font-size:1.1rem;color:#111;">Nava.ai Core Engine</p>
+                            <p style="font-size:13px;color:#6B7280;margin-top:4px;">Adaptive · Predictive · Real-Time</p>
+                        </div>
+                        <div class="nava-orbit-dot dot-1"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <div class="nava-orbit-dot dot-2"><i class="fa-solid fa-truck-medical"></i></div>
+                        <div class="nava-orbit-dot dot-3"><i class="fa-solid fa-flask"></i></div>
+                        <div class="nava-orbit-dot dot-4"><i class="fa-solid fa-pills"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FEATURES GRID ════════════════════════════════════════════════════ -->
+    <section id="features" class="section-padding nava-features-section">
+        <div class="container">
+            <div class="section-title text-center scroll-reveal up" style="margin-bottom:56px;">
+                <span class="subtitle">Core Capabilities</span>
+                <h2>What Nava.ai Can Do</h2>
+                <p class="section-desc">Six intelligent modules working in concert to power India's healthcare ecosystem.</p>
+            </div>
+            <div class="nava-features-grid">
+
+                <div class="nava-feat-card scroll-reveal up">
+                    <div class="nfc-icon-wrap"><i class="fa-solid fa-route"></i></div>
+                    <h4>Smart Patient Routing</h4>
+                    <p>Matches each patient to the nearest, most suitable provider in real time — factoring specialty, load, distance, and urgency scores.</p>
+                    <div class="nfc-tag">Routing AI</div>
+                </div>
+
+                <div class="nava-feat-card scroll-reveal up delay-1">
+                    <div class="nfc-icon-wrap"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h4>AI-Based Diagnostics</h4>
+                    <p>Symptom intake and preliminary triage powered by ML models trained on clinical datasets — reducing diagnostic delays by 60%.</p>
+                    <div class="nfc-tag">Clinical AI</div>
+                </div>
+
+                <div class="nava-feat-card scroll-reveal up delay-2">
+                    <div class="nfc-icon-wrap"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h4>Emergency Load Balancing</h4>
+                    <p>Distributes incoming emergency cases dynamically across available ambulances and hospitals to prevent any single point of overload.</p>
+                    <div class="nfc-tag">Operations AI</div>
+                </div>
+
+                <div class="nava-feat-card scroll-reveal up delay-1">
+                    <div class="nfc-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+                    <h4>Hospital Queue Prediction</h4>
+                    <p>Forecasts patient inflow 2–6 hours ahead using historical patterns and real-time signals, helping hospitals pre-allocate staff and beds.</p>
+                    <div class="nfc-tag">Predictive AI</div>
+                </div>
+
+                <div class="nava-feat-card scroll-reveal up delay-2">
+                    <div class="nfc-icon-wrap"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h4>Predictive Risk Analysis</h4>
+                    <p>Identifies high-risk patient profiles early using vitals, medical history, and regional outbreak data to flag and prioritise critical cases.</p>
+                    <div class="nfc-tag">Risk AI</div>
+                </div>
+
+                <div class="nava-feat-card scroll-reveal up delay-3">
+                    <div class="nfc-icon-wrap"><i class="fa-solid fa-gears"></i></div>
+                    <h4>Workflow Automation</h4>
+                    <p>Automates repetitive clinical and operational tasks — appointment scheduling, pharmacy restocking alerts, and discharge follow-ups.</p>
+                    <div class="nfc-tag">Automation AI</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ WORKFLOW TIMELINE ════════════════════════════════════════════════ -->
+    <section class="section-padding" style="background:#fff;">
+        <div class="container">
+            <div class="section-title text-center scroll-reveal up" style="margin-bottom:64px;">
+                <span class="subtitle">How It Works</span>
+                <h2>The Nava.ai Healthcare Journey</h2>
+                <p class="section-desc">Every patient interaction powered by AI from first contact to resolution.</p>
+            </div>
+            <div class="nava-flow-row">
+                <div class="nava-flow-item scroll-reveal up">
+                    <div class="nf-node"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="nf-connector"><div class="nf-line"></div></div>
+                    <div class="nf-card">
+                        <span class="nf-step">Step 01</span>
+                        <h5>Patient Request</h5>
+                        <p>User submits a request via app or call. Nava.ai captures intent in &lt;200ms.</p>
+                    </div>
+                </div>
+                <div class="nava-flow-item scroll-reveal up delay-1">
+                    <div class="nf-node"><i class="fa-solid fa-brain"></i></div>
+                    <div class="nf-connector"><div class="nf-line"></div></div>
+                    <div class="nf-card">
+                        <span class="nf-step">Step 02</span>
+                        <h5>AI Triage</h5>
+                        <p>Symptoms analysed, urgency scored, and case category assigned in real time.</p>
+                    </div>
+                </div>
+                <div class="nava-flow-item scroll-reveal up delay-2">
+                    <div class="nf-node"><i class="fa-solid fa-hospital"></i></div>
+                    <div class="nf-connector"><div class="nf-line"></div></div>
+                    <div class="nf-card">
+                        <span class="nf-step">Step 03</span>
+                        <h5>Provider Matching</h5>
+                        <p>Optimal clinic, hospital, or specialist matched based on 12+ live signals.</p>
+                    </div>
+                </div>
+                <div class="nava-flow-item scroll-reveal up delay-2">
+                    <div class="nf-node"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="nf-connector"><div class="nf-line"></div></div>
+                    <div class="nf-card">
+                        <span class="nf-step">Step 04</span>
+                        <h5>Diagnostics</h5>
+                        <p>Lab routing and telemedicine consultation coordinated automatically.</p>
+                    </div>
+                </div>
+                <div class="nava-flow-item last scroll-reveal up delay-3">
+                    <div class="nf-node red"><i class="fa-solid fa-truck-medical"></i></div>
+                    <div class="nf-card">
+                        <span class="nf-step">Step 05</span>
+                        <h5>Emergency Routing</h5>
+                        <p>Ambulance dispatched on optimal path, arrival ETA updated every 15 seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FINAL CTA ═════════════════════════════════════════════════════════ -->
+    <section class="nava-cta-section">
+        <div class="nava-cta-glow"></div>
+        <div class="container text-center" style="position:relative;z-index:2;">
+            <span class="subtitle" style="color:rgba(255,255,255,0.6);">Get Started</span>
+            <h2 class="scroll-reveal up" style="font-size:2.8rem;font-weight:800;color:#fff;margin:16px 0 20px;letter-spacing:-1px;">Build the Future of Intelligent<br>Healthcare with Nava.ai</h2>
+            <p class="scroll-reveal up delay-1" style="color:rgba(255,255,255,0.7);font-size:1.05rem;max-width:580px;margin:0 auto 40px;line-height:1.7;">Whether you are a hospital network, diagnostic chain, or ambulance operator — Nava.ai integrates in days, not months.</p>
+            <div class="nava-cta-btns scroll-reveal up delay-2">
+                <a href="#" class="nava-cta-primary modal-trigger" data-modal="partnerModal">Partner With Us</a>
+                <a href="contact.html" class="nava-cta-ghost">Schedule Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TRUST / TESTIMONIALS ═════════════════════════════════════════════ -->
+    <section class="section-padding nava-trust-section">
+        <div class="container">
+            <div class="section-title text-center scroll-reveal up" style="margin-bottom:56px;">
+                <span class="subtitle">Early Partners</span>
+                <h2>Trusted by Healthcare Leaders</h2>
+                <p class="section-desc">Nava.ai is already being piloted with healthcare networks across Southern and Central India.</p>
+            </div>
+            <div class="nava-testimonials">
+                <div class="nt-card scroll-reveal up">
+                    <div class="nt-stars">★★★★★</div>
+                    <p>"Nava.ai reduced our emergency triage time by nearly 35%. The predictive load-balancing alone has transformed how we plan our night shifts."</p>
+                    <div class="nt-author">
+                        <div class="nt-avatar">DK</div>
+                        <div>
+                            <strong>Dr. Deepak Kumar</strong>
+                            <span>Chief Medical Officer, RegionCare Hospitals</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nt-card scroll-reveal up delay-1">
+                    <div class="nt-stars">★★★★★</div>
+                    <p>"The ambulance demand forecasting is extraordinary. We now pre-position vehicles before peak demand hits — something we could never do manually."</p>
+                    <div class="nt-author">
+                        <div class="nt-avatar">AS</div>
+                        <div>
+                            <strong>Ananya Sharma</strong>
+                            <span>Operations Head, MedQuick Ambulance Network</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nt-card scroll-reveal up delay-2">
+                    <div class="nt-stars">★★★★★</div>
+                    <p>"Integrating Nava.ai into our diagnostic workflow was seamless. Our lab turnaround times improved and patient satisfaction scores went up by 22%."</p>
+                    <div class="nt-author">
+                        <div class="nt-avatar">PR</div>
+                        <div>
+                            <strong>Priya Reddy</strong>
+                            <span>Director, BioScan Diagnostics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-brand-section">
+                    <a href="index.html" class="logo footer-logo">
+                        <span class="logo-icon text-white"><i class="fa-solid fa-heart-pulse"></i></span>
+                        <span class="logo-text text-white">Xpedicr<span class="dot">.</span></span>
+                    </a>
+                    <p class="footer-description">Building India's future healthcare infrastructure through technology, partnerships, logistics, and innovation.</p>
+                </div>
+                <div class="footer-links-section">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="ecosystem-services.html">Ecosystem &amp; Services</a></li>
+                        <li><a href="future-partners.html">Future &amp; Partners</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-section">
+                    <h5 class="footer-title">Our Brands</h5>
+                    <ul class="footer-links">
+                        <li><a href="ecosystem-services.html#nidhaan">Nidhaan</a></li>
+                        <li><a href="nava-ai.html">Nava.ai</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <div class="footer-contact mb-4">
+                        <div class="contact-item"><i class="fa-solid fa-location-dot"></i><p>Tech Park, Electronic City, Bengaluru, India</p></div>
+                        <div class="contact-item"><i class="fa-solid fa-envelope"></i><p>support@xpedicr.in</p></div>
+                        <div class="contact-item"><i class="fa-solid fa-phone"></i><p>+91 72898 90080</p></div>
+                    </div>
+                    <h5 class="footer-title">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; 2026 Xpedicr Industry Pvt. Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="modal-trigger" data-modal="privacyModal">Privacy Policy</a>
+                    <a href="#" class="modal-trigger" data-modal="termsModal">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/917289890080" target="_blank" class="floating-whatsapp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Partner Modal (shared) -->
+    <div class="modal-overlay" id="partnerModal">
+        <div class="modal-content" style="max-width:700px;">
+            <div class="modal-header">
+                <h3>Partner With Xpedicr</h3>
+                <button class="modal-close" data-close="partnerModal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-sm text-gray mb-4">Join our healthcare ecosystem. Fill out the basic details and our team will reach out within 48 hours.</p>
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group"><label>Full Name *</label><input type="text" class="form-control" placeholder="Enter your name" required></div>
+                        <div class="col-md-6 form-group"><label>Company / Business Name *</label><input type="text" class="form-control" placeholder="Business name" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group"><label>Email Address *</label><input type="email" class="form-control" placeholder="email@example.com" required></div>
+                        <div class="col-md-6 form-group"><label>Mobile Number *</label><input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required></div>
+                    </div>
+                    <div class="form-group mt-3"><label>Message (Optional)</label><textarea class="form-control" rows="3" placeholder="Tell us about your organization..."></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 mt-4">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+    // Counter animation for dashboard
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.nd-val').forEach(el => {
+            const target = +el.dataset.target;
+            let count = 0;
+            const step = Math.ceil(target / 60);
+            const timer = setInterval(() => {
+                count = Math.min(count + step, target);
+                el.textContent = count;
+                if (count >= target) clearInterval(timer);
+            }, 24);
+        });
+    });
+    </script>
+</body>
+</html>
